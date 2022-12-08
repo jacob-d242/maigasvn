@@ -6,3 +6,8 @@ export const COLORS = {
     lightSecondary:"#333333",
     main:"#8F00FF"
 }
+
+
+export const IMAGES = {
+    backgroundImg : require("../assets/Images/MobileHome.png")
+}

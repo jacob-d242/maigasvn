@@ -1,6 +1,6 @@
 import { Box, Image, Text } from 'native-base';
 import React from 'react';
-import { COLORS } from '../Constants/Index';
+import { COLORS, IMAGES } from '../Constants/Index';
 
 
 export default function LoginScreen() {
@@ -10,8 +10,11 @@ export default function LoginScreen() {
         resizeMode='cover'
         size="lg"
         w="full"
-        source={require("../assets/Images/MobileHome.png")}
+        source={IMAGES.backgroundImg}
       />
+      <Box>
+        
+      </Box>
      
     </Box>
   );
