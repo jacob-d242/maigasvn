@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint --ext .tsx --ext .ts src/"
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.16",
