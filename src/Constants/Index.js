@@ -8,5 +8,6 @@ export const COLORS = {
 };
 
 export const IMAGES = {
-    backgroundImg: require('../assets/Images/MobileHome.png')
+  backgroundImg: require('../assets/Images/MobileHome.png'),
+  logo: require('../assets/Images/logoMai.png')
 };

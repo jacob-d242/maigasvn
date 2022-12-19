@@ -8,7 +8,7 @@ import { Pressable } from 'react-native';
 export default function LoginScreen() {
   const size=25
   return (
-    <Box flex={1} >
+    <Box flex={1} bgColor={COLORS.lightPrimary}>
       <Image
         flex={1}
         resizeMode='cover'
