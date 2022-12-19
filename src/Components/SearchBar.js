@@ -18,10 +18,11 @@ export default function Searchbar() {
       <Input
         placeholder="Search People & Places"
         width='85%'
-        borderRadius='4'
+        borderRadius='8'
         py='3'
-        px="
-        fontSize="14"
+        px='3'
+        fontSize="18"
+        bgColor={COLORS.backgrounds}
       />
       <Pressable ml={3}>
         <Icon
