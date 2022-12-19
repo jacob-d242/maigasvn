@@ -1,12 +1,12 @@
 import { NativeBaseProvider, Text, View } from 'native-base'
 import React from 'react'
 
-import Verify from './src/Screens/Verify'
+import HomeScreen from './src/Screens/HomeScreen'
 
 export default function App() {
   return ( 
     <NativeBaseProvider>
-      <Verify/>
+      <HomeScreen/>
     </NativeBaseProvider>
   )
 }
