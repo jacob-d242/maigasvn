@@ -1,9 +1,11 @@
 const gasData = [
     {
+        
         id: '1',
         name: 'SeaGas',
         Size: '6',
-        price:'1200'
+        price: '1200',
+        image:'https'
     },
     {
         id: '2',
