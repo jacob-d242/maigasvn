@@ -2,7 +2,7 @@ import { HStack, Input } from 'native-base';
 import React from 'react';
 import { COLORS } from '../Constants/Index';
 import { Pressable } from 'react-native';
-import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default function Searchbar() {
   return (
@@ -16,16 +16,18 @@ export default function Searchbar() {
       safeAreaTop
     >
       <Input
-        placeholder='Kringet,Dasan'
-        w='85%'
-        bgColor='#FFFF'
-        h='12'
-        borderWidth={0}
+        placeholder="Search People & Places"
+        width='85%'
+        borderRadius='4'
+        py='3'
+        px="
+        fontSize="14"
       />
       <Pressable ml={3}>
         <Icon
           name='basket'
           size={30}
+          color={COLORS.backgrounds}
         />
       </Pressable>
     </HStack>
