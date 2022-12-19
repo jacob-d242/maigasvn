@@ -6,7 +6,22 @@ import MinBtn from '../Components/MinBtn';
 export default function Verify() {
   return (
     <Box flex={1} bgColor={COLORS.bgColor}>
-      <Center w='full' height={250}>
+      <Image
+        flex={1}
+        resizeMode='cover'
+        alt='background-image'
+        size="lg"
+        w="full"
+        source={IMAGES.backgroundImg}
+      />
+      <Box
+        w='full'
+        h='full'
+        position='absolute'
+        top='0'
+        justifyContent='center'
+      >
+      <Center w='full' height={150}>
         <Image
           source={IMAGES.logo}
           size='lg'
@@ -21,7 +36,8 @@ export default function Verify() {
           bg={COLORS.primary}
           color='#FFFF'
         >Login</MinBtn>
-      </VStack>
+        </VStack>
+        </Box>
     </Box>
   );
 }
