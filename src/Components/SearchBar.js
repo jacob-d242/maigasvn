@@ -1,4 +1,4 @@
-import { HStack, Input } from 'native-base';
+import { Box, HStack, Input } from 'native-base';
 import React from 'react';
 import { COLORS } from '../Constants/Index';
 import { Pressable } from 'react-native';
@@ -27,9 +27,20 @@ export default function Searchbar() {
       <Pressable ml={3}>
         <Icon
           name='basket'
-          size={30}
+          size={33}
           color={COLORS.backgrounds}
         />
+        <Box
+          rounded='full'
+          px={1}
+          position='absolute'
+          top={-16}
+          left={2}
+          _text={{
+            color: '#F0F0F0',
+            fontSize: '18px'
+          }}
+        >5</Box>
       </Pressable>
     </HStack>
   );
