@@ -2,12 +2,12 @@ import { NativeBaseProvider, Text, View } from 'native-base'
 import React from 'react'
 
 import HomeScreen from './src/Screens/HomeScreen'
-import SingleProduct from './src/Screens/SingleProduct'
+import CartScreen from './src/Screens/CartScreen'
 
 export default function App() {
   return ( 
     <NativeBaseProvider>
-      <SingleProduct/>
+      <CartScreen/>
     </NativeBaseProvider>
   )
 }

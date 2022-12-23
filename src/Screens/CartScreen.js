@@ -1,7 +1,7 @@
 import { View } from 'native-base';
 import React from 'react';
 
-export default function componentName() {
+export default function CartScreen() {
   return (
       <View>
       <
