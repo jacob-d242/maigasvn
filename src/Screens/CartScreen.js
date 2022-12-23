@@ -1,6 +1,7 @@
-import { Box, Center, Text } from 'native-base';
+import { Box, Center, ScrollView, Text } from 'native-base';
 import React from 'react';
 import CartEmpty from '../Components/CartEmpty';
+import CartItems from '../Components/CartItems';
 
 export default function CartScreen() {
   return (
@@ -8,7 +9,12 @@ export default function CartScreen() {
       <Center w='full' py={5}>
         <Text  fontSize={25}  bold>CartScreen</Text>
       </Center>
-      <CartEmpty/>
+      {/* IF CART IS EMPTY */}
+      {/*<CartEmpty />*/}
+      {/* IF CART HAS PRODUCTS */}
+      <ScrollView showsVerticalScrollIndicator={false}>
+        <CartItems/>
+      </ScrollView>
     </Box>
   );
 }
