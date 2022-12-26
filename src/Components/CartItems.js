@@ -54,9 +54,10 @@ const hiddenItem = () => (
     h='88%'
     ml='auto'
     justifyContent='center'
-    bg='red'>
+    bg={COLORS.danger}
+  >
     <Center alignItems='center' space={2} >
-      <Icon name='trash' size={28} color={COLORS.main } />
+      <Icon name='trash' size={24} color={COLORS.main } />
     </Center>
   </Pressable>
 )
