@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Image, Pressable, Text, VStack } from 'native-base'
+import { Box, Button, Center, HStack, Image, Pressable, Text, VStack } from 'native-base'
 import React from 'react'
 import { SwipeListView } from 'react-native-swipe-list-view'
 import gasData from '../data/ProductData'
@@ -11,7 +11,7 @@ const Swiper = () => (
     previewRowKey='0'
     previewOpenValue={-40}
     previewOpenDelay={3000}
-    data={gasData.slice(0, 3)}
+    data={gasData.slice(0, 2)}
     renderItem={renderItems}
     renderHiddenItem={hiddenItem}
     showsVerticalScrollIndicator={false}
@@ -29,11 +29,12 @@ const renderItems = (gasData) => (
         rounded={10}
         overflow='hidden'
       >
-        <Center w='25%' bg={COLORS.main }>
+        <Center w='25%' bg={COLORS.backgrounds }>
           <Image
             source={{ uri: gasData.item.image }}
             alt={gasData.item.name}
             w='full'
+            h={24}
             resizeMode='contain'
           />
         </Center>
@@ -41,6 +42,13 @@ const renderItems = (gasData) => (
           <Text isTruncated bold color={COLORS.main} fontSize={ 18}>{gasData.item.name }</Text>
           <Text  bold color={COLORS.main} fontSize={18}>KSHS{gasData.item.price }</Text>
         </VStack>
+        <Center>
+          <Button
+            bg={COLORS.main}
+            _pressed={{ bg: COLORS.lightPrimary }}
+            _text={{fontSize:'18px'}}
+          >2</Button>
+        </Center>
       </HStack>
     </Box>
   </Pressable>
