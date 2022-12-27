@@ -5,7 +5,9 @@ export const COLORS = {
   secondary: '#BDBDBD',
   lightSecondary: '#333333',
   main: '#8F00FF',
-  danger:'#FF0000'
+  danger: '#FF0000',
+  black: '#1111',
+  white:'#00000'
 };
 
 export const IMAGES = {
