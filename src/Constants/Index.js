@@ -6,8 +6,8 @@ export const COLORS = {
   lightSecondary: '#333333',
   main: '#8F00FF',
   danger: '#FF0000',
+  white:'#FFFF',
   black: '#1111',
-  white:'#00000'
 };
 
 export const IMAGES = {
