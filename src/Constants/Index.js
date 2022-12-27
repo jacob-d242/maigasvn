@@ -10,5 +10,6 @@ export const COLORS = {
 
 export const IMAGES = {
   backgroundImg: require('../assets/Images/MobileHome.png'),
-  logo: require('../assets/Images/logoMai.png')
+  logo: require('../assets/Images/logoMai.png'),
+  user: require('../assets/Images/user.png')
 };
