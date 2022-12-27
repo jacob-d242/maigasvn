@@ -1,6 +1,10 @@
 import React,{useState} from 'react'
 import {useWindowDimensions} from 'react-native'
 import { SceneMap } from 'react-native-tab-view'
+import Profile from './Profile';
+import Order from './Order';
+
+
 
 const renderScene = SceneMap({
     first: Profile,
