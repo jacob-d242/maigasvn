@@ -7,7 +7,7 @@ export const COLORS = {
   main: '#8F00FF',
   danger: '#FF0000',
   white:'#FFFF',
-  black: '#1111',
+  black: '#111',
 };
 
 export const IMAGES = {
