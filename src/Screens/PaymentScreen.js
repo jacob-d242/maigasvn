@@ -2,17 +2,8 @@ import React from 'react'
 import { Box, Center, HStack, Image, ScrollView, Spacer, Text, VStack } from 'native-base'
 import { COLORS, IMAGES } from '../Constants/Index'
 import Icon from 'react-native-vector-icons/Ionicons'
-const paymentMode = [
-  {
-    image: IMAGES.mpesa,
-    alt: 'MPESA'
-  },
-  {
-    image: IMAGES.card,
-    alt: 'MPESA'
-  },
-]
-
+import MinBtn from '../Components/MinBtn'
+ 
 export default function PaymentScreen() {
   return (
     <Box safeAreaTop bg={COLORS.main} py={5}>
@@ -24,9 +15,9 @@ export default function PaymentScreen() {
       <Box h='full' px={5} bg={COLORS.backgrounds}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <VStack space={6} mt={5}>
-            {
-              paymentMode.map((i, index) => {
-                <HStack key={index}
+            
+                <HStack 
+                  
                   alignItems='center'
                   bg={COLORS.secondary}
                   px={3}
@@ -36,8 +27,8 @@ export default function PaymentScreen() {
                 >
                   <Box>
                     <Image
-                      source={i.image}
-                      alt={i.alt}
+                      source={IMAGES.mpesa}
+                      alt='M-pesa'
                       h={70}
                       resizeMode='contain'
                       w={70}
@@ -50,8 +41,11 @@ export default function PaymentScreen() {
                   />
                 </HStack>
 
-              })
-            }
+             
+            <MinBtn
+              color={COLORS.white}
+              bg={COLORS.primary}
+            >CONTINUE</MinBtn>
           </VStack>
         </ScrollView>
       </Box>
