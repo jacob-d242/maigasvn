@@ -1,4 +1,4 @@
-import { Box, Center, FormControl, Input, Text, VStack } from 'native-base'
+import { Box, Center, FormControl, Input, ScrollView, Text, VStack } from 'native-base'
 import React from 'react'
 import { COLORS } from '../Constants/Index'
 import MinBtn from '../Components/MinBtn'
@@ -30,7 +30,8 @@ export default function ShippingScreen() {
                 <Text color={COLORS.white} fontSize={22} bold>Shipping</Text>
             </Center>
             
-            <Box h='full'px={5} bg={COLORS.white}>
+            <Box h='full' px={5} bg={COLORS.white}>
+                <ScrollView showsVerticalScrollIndicator={false}>
                 <VStack space={6} mt={5}>
                 {
                 ShippingInputs.map((i,index) => (
@@ -63,7 +64,8 @@ export default function ShippingScreen() {
                     <MinBtn mt={5}  bg={COLORS.primary} color={COLORS.white} >
                         CONTINUE
                     </MinBtn> 
-                </VStack>
+                    </VStack>
+                </ScrollView>
             </Box>
         </Box>
     )
