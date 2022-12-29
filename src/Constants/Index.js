@@ -15,5 +15,7 @@ export const IMAGES = {
   logo: require('../assets/Images/logoMai.png'),
   user: require('../assets/Images/user.png'),
   mpesa: require('../assets/Images/mpesa.png'),
-  card:require('../assets/Images/card.jpeg')
+  card: require('../assets/Images/card.jpeg'),
+  gas: require('../assets/Images/Gas.png'),
+  gallon: require('../assets/Images/gallon.png')
 };
