@@ -3,8 +3,10 @@ import { Box, Center, HStack, Image, ScrollView, Spacer, Text, VStack } from 'na
 import { COLORS, IMAGES } from '../Constants/Index'
 import Icon from 'react-native-vector-icons/Ionicons'
 import MinBtn from '../Components/MinBtn'
+import { useNavigation } from '@react-navigation/native'
  
 export default function PaymentScreen() {
+  const navigation =useNavigation()
   return (
     <Box safeAreaTop bg={COLORS.main} py={5}>
       <Center pb={15}>
@@ -43,6 +45,7 @@ export default function PaymentScreen() {
 
              
             <MinBtn
+               onPress={()=>navigation.navigate('PlaceOrder')}
               color={COLORS.white}
               bg={COLORS.primary}
             >CONTINUE</MinBtn>

@@ -5,7 +5,7 @@ import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Pressable } from 'react-native';
 
 
-export default function LoginScreen() {
+export default function LoginScreen({navigation}) {
   const size=25
   return (
     <Box flex={1} bgColor={COLORS.lightPrimary}>
@@ -71,10 +71,13 @@ export default function LoginScreen() {
           rounded={50}
           bgColor={COLORS.primary
           }
+          onPress={()=>navigation.navigate('Bottom')}
         >
           LOGIN
         </Button>
-        <Pressable mt={4}>
+        <Pressable
+          onPress={()=>navigation.navigate('Register')}
+          mt={4}>
           <Text color={COLORS.primary} fontSize={20} >SIGN UP</Text>
          </Pressable>
       </Box>

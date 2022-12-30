@@ -3,8 +3,10 @@ import React from 'react';
 import { COLORS } from '../Constants/Index';
 import { Pressable } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Searchbar() {
+  const navigation = useNavigation()
   return (
     <HStack
       space={3}
@@ -26,6 +28,7 @@ export default function Searchbar() {
       />
       <Pressable ml={3}>
         <Icon
+          onPress={()=>navigation.navigate('Cart')}
           name='basket'
           size={33}
           color={COLORS.backgrounds}

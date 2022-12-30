@@ -1,9 +1,11 @@
 import { Box, Flex, ScrollView, Image, Pressable, Heading, Text } from 'native-base';
 import React from 'react';
 import gasData from '../data/ProductData';
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function ProductCard() {
+  const navigation = useNavigation()
   return (
     <ScrollView flex={1}    >
       <Flex
@@ -15,6 +17,7 @@ export default function ProductCard() {
         {
           gasData.map((product) => (
             <Pressable
+              onPress={()=>navigation.navigate('Single', product)}
               key={product.id}
               w='48%'
               bgColor='white'

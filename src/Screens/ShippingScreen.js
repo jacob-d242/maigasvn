@@ -2,6 +2,7 @@ import { Box, Center, FormControl, Input, ScrollView, Text, VStack } from 'nativ
 import React from 'react'
 import { COLORS } from '../Constants/Index'
 import MinBtn from '../Components/MinBtn'
+import { useNavigation } from '@react-navigation/native'
 
 const ShippingInputs = [
     {
@@ -23,6 +24,7 @@ const ShippingInputs = [
 ]
 
 export default function ShippingScreen() {
+    const navigation =useNavigation()
     return (
         <Box flex={1} py={5} safeAreaTop bg={COLORS.primary}>
             <Center pb={15}>
@@ -61,7 +63,9 @@ export default function ShippingScreen() {
                 ))
             }
 
-                    <MinBtn mt={5}  bg={COLORS.primary} color={COLORS.white} >
+                    <MinBtn 
+                            onPress={()=>navigation.navigate('CheckOut')}
+                            mt={5} bg={COLORS.primary} color={COLORS.white} >
                         CONTINUE
                     </MinBtn> 
                     </VStack>

@@ -2,11 +2,11 @@ import React from 'react'
 import { Box, Center, Pressable, Text } from 'native-base'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { StyleSheet } from 'react-native'
-import HomeScreen from '../Screens/HomeScreen'
 import  Icon  from 'react-native-vector-icons/Entypo'
 import { COLORS } from '../Constants/Index'
 import ProfileScreen from '../Screens/ProfileScreen'
 import CartScreen from '../Screens/CartScreen'
+import StackNav from './StackNav'
 
 const Tab = createBottomTabNavigator()
 const CustomTab = ({ children, onPress }) => (
@@ -25,7 +25,7 @@ const CustomTab = ({ children, onPress }) => (
 export default function BottomNav() {
     return (
         <Tab.Navigator
-            //backBehavior='main'
+            backBehavior='Main'
             initialRouteName='Main'
             screenOptions={{
                 tabBarShowLabel:false,
@@ -36,7 +36,7 @@ export default function BottomNav() {
             {/* Home Screen tab */}
             <Tab.Screen
                 name='Main'
-                component={HomeScreen}
+                component={StackNav}
                 options={{
                 tabBarIcon: ({ focused }) => (
                     <Center>

@@ -5,7 +5,7 @@ import  Icon  from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Pressable } from 'react-native';
 import user from 'react-native-vector-icons/AntDesign'
 
-export default function RegisterScreen() {
+export default function RegisterScreen({navigation}) {
   const size=25
   return (
     <Box flex={1} bgColor={COLORS.lightPrimary}>
@@ -89,10 +89,13 @@ export default function RegisterScreen() {
           rounded={50}
           bgColor={COLORS.primary
           }
+          onPress={()=>navigation.navigate('Bottom')}
         >
           SIGN UP
         </Button>
-        <Pressable mt={4}>
+        <Pressable 
+          onPress={()=>navigation.navigate('Login')}
+          mt={4}>
           <Text color={COLORS.primary} fontSize={20} >Login</Text>
          </Pressable>
       </Box>

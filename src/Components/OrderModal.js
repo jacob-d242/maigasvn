@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button, Center, HStack, Modal, Text, Pressable, VStack, Image } from 'native-base'
 import MinBtn from './MinBtn'
 import { COLORS, IMAGES } from '../Constants/Index.js'
+import { useNavigation } from '@react-navigation/native'
 
 
 const OrderInfo = [
@@ -29,6 +30,7 @@ const OrderInfo = [
 
 export default function OrderModal() {
     const [showModal, setShowModal] = useState(false)
+    const navigation =useNavigation()
     return (
         <Center>
             <MinBtn
@@ -83,18 +85,21 @@ export default function OrderModal() {
                         
                         <Button
                             w='full'
-                            bg={COLORS.black}
+                            bg={COLORS.primary}
                             h={45}
                             _text={{
                                 fontSize: 16,
                                 color: COLORS.white,
                                 fontWeight:'bold'
                             }}
-                            onPress={() => setShowModal(false)}
+                            onPress={() => { 
+                                navigation.navigate('Home')
+                                setShowModal(false)
+                            }}
                             _pressed={{
                                 bg: COLORS.lightPrimary
                             }}
-                        >Place Order</Button>
+                        >Pay On Delivery</Button>
                     </Modal.Footer>
                 </Modal.Content>
             </Modal>

@@ -4,7 +4,9 @@ import CartEmpty from '../Components/CartEmpty';
 import CartItems from '../Components/CartItems';
 import {COLORS} from '../Constants/Index'
 import MinBtn from '../Components/MinBtn';
+import { useNavigation } from '@react-navigation/native';
 export default function CartScreen() {
+  const navigation = useNavigation()
   return (
     <Box safeAreaTop flex={1}>
       <Center w='full' py={5}>
@@ -45,7 +47,9 @@ export default function CartScreen() {
           </HStack>
         </Center>
         <Center px={5}>
-          <MinBtn mt={10} bg={COLORS.main} color='#FFFF' >CheckOut</MinBtn>
+          <MinBtn
+             onPress={()=>navigation.navigate('Shipping')}
+            mt={10} bg={COLORS.main} color='#FFFF' >CheckOut</MinBtn>
         </Center>
       </ScrollView>
     </Box>
