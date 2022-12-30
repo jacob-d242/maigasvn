@@ -31,7 +31,7 @@ export default function PlaceOrderModal() {
   return (
     <Center>
       <MinBtn
-        bg={COLORS.main}
+        bg={COLORS.black}
         color={COLORS.white}
         onPress={() => setShowModal(true)}
       >Total</MinBtn>
@@ -52,7 +52,7 @@ export default function PlaceOrderModal() {
                 >
                   <Text fontWeight='medium' fontSize={16}>{i.title}</Text>
                   <Text
-                    color={i.color === 'main' ? COLORS.black : COLORS.black}
+                    color={i.color === 'main' ? COLORS.main : COLORS.black}
                     bold fontSize={16}
                   >KShs {i.price}</Text>
                 </HStack>                

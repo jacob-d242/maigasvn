@@ -41,8 +41,8 @@ export default function OrderInfo({ icon, title, subTitle, text, success, danger
 
             {
                 success && (
-                    <Center py={2} mt={2} rounded={5} w='full' bg={COLORS.lightPrimary}>
-                        <Text fontSize={13} color={COLORS.black}>
+                    <Center py={2} mt={2} rounded={10} w='full' bg={COLORS.lightPrimary}>
+                        <Text fontSize={13} color={COLORS.white}>
                            Paid on Jan 2021
                         </Text>
                     </Center>
@@ -50,7 +50,7 @@ export default function OrderInfo({ icon, title, subTitle, text, success, danger
             }
             {
                 danger && (
-                    <Center py={2} mt={2} rounded={5} w='full' bg={COLORS.red}>
+                    <Center py={2} mt={2} rounded={10} w='full' bg={COLORS.danger}>
                         <Text fontSize={13} color={COLORS.black}>
                             Not Delivered
                         </Text>
