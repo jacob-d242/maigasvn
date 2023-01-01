@@ -17,11 +17,11 @@ export default function StackNav() {
              // headerShown:false
           }}
       >
-          <Stack.Screen name='Home' component={HomeScreen} />  
-          <Stack.Screen name='CheckOut' component={PaymentScreen} />  
           <Stack.Screen name='Single' component={SingleProduct} />   
           <Stack.Screen name='Shipping' component={ShippingScreen} />  
           <Stack.Screen name='Order' component={OrderScreen}/> 
+          <Stack.Screen name='Home' component={HomeScreen} />  
+          <Stack.Screen name='CheckOut' component={PaymentScreen} />  
           <Stack.Screen name='PlaceOrder' component={PlaceOrderScreen} />  
      </Stack.Navigator>
   )

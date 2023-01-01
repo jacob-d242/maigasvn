@@ -10,7 +10,7 @@ export default function CartScreen() {
   return (
     <Box safeAreaTop flex={1}>
       <Center w='full' py={5}>
-        <Text  fontSize={25}  bold>CartScreen</Text>
+        <Text  fontSize={25}  bold>Your Cart</Text>
       </Center>
       {/* IF CART IS EMPTY */}
       {/*<CartEmpty />*/}
