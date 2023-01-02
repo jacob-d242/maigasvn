@@ -1,7 +1,7 @@
 import { Box, Center, Heading,  Text } from 'native-base'
 import React from 'react'
 import { COLORS } from '../Constants/Index'
-import  Icon  from 'react-native-vector-icons/FontAwesome'
+import  FontAwesome  from 'react-native-vector-icons/FontAwesome'
 export default function OrderInfo({ icon, title, subTitle, text, success, danger }) {
     return (
         <Center
@@ -16,7 +16,7 @@ export default function OrderInfo({ icon, title, subTitle, text, success, danger
             px={4}
         >
             <Center bg={COLORS.main} w={60} h={60} rounded='full'>
-                <Icon
+                <FontAwesome
                     name={icon}
                     size={36}
                     color={COLORS.white}

@@ -19,7 +19,7 @@ export default function PlaceOrderScreen() {
                     {/* Missing Icons */}
                     <OrderInfo
                         title='Shipping Info'
-                        icon=''
+                        icon='shipping-fast'
                         subTitle='Shipping : Mombasa'
                         text='Pay mode : M-Pesa'
                         

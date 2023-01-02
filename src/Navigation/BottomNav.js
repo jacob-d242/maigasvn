@@ -2,7 +2,8 @@ import React from 'react'
 import { Box, Center, Pressable, Text } from 'native-base'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { StyleSheet } from 'react-native'
-import  Icon  from 'react-native-vector-icons/Entypo'
+import Icon from 'react-native-vector-icons/Entypo'
+import  FontAwesome  from 'react-native-vector-icons/FontAwesome'
 import { COLORS } from '../Constants/Index'
 import ProfileScreen from '../Screens/ProfileScreen'
 import CartScreen from '../Screens/CartScreen'
@@ -60,9 +61,9 @@ export default function BottomNav() {
                     <Center>
                         {
                             focused ? (
-                                <Icon name='home' size={28} color={COLORS.white} />
+                                <FontAwesome name='shopping-basket'  size={28} color={COLORS.white} />
                             ) : (
-                                <Icon name='home' size={28} color={COLORS.white}/>
+                                <FontAwesome name='shopping-basket'  size={28} color={COLORS.white}/>
                             )
                         }
                     </Center>
