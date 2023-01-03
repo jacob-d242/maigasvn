@@ -3,7 +3,7 @@ import React from 'react'
 import { SwipeListView } from 'react-native-swipe-list-view'
 import gasData from '../data/ProductData'
 import { COLORS } from '../Constants/Index'
-import Icon  from 'react-native-vector-icons/FontAwesome'
+import FontAwesome  from 'react-native-vector-icons/FontAwesome'
 
 const Swiper = () => (
   <SwipeListView
